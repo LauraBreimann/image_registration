@@ -1,0 +1,7 @@
+fov,timepoint,channel,filepath
+field01,tp1,ch1,data/raw/field01_ch1.tif
+field01,tp1,ch2,data/raw/field01_ch2.tif
+field01,tp1,ch3,data/raw/field01_ch3.tif
+field02,tp1,ch1,data/raw/field02_ch1.tif
+field02,tp1,ch2,data/raw/field02_ch2.tif
+field02,tp1,ch3,data/raw/field02_ch3.tif
