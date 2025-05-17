@@ -1,0 +1,13 @@
+name: chromatic-align
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - tifffile
+  - scikit-image
+  - matplotlib
+  - jupyter
+  - ipykernel
+  - pip
