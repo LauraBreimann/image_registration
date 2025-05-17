@@ -11,7 +11,7 @@ Chromatic shifts are corrected using affine transformations, determined from bea
 
 * _**1.	Prepare (bead) images for chromatic shift detection**_
 * _**2.	Determine chromatic shifts**_
-* _**3.	pply chromatic shifts to experimental images**_
+* _**3.	Apply chromatic shifts to experimental images**_
 * _**4.	Check quality of alignment**_
 
 
@@ -37,7 +37,7 @@ _TODO: Link to bead slide prep protocol._
 
 ---
   
-## 2. Determine chromatic shiftst 
+## 2. Determine chromatic shifts
 
 Use ImageJ/Fiji with the plugin:
 
@@ -60,7 +60,7 @@ Save these matrices into a JSON file (`transformation_dicts.json`):
 }
 ```
 
-## 3. Apply Chromatic Shifts to Images
+## 3. Apply chromatic shifts to experimental images
 
 Use the scripts in this repository to apply the transformations to raw experimental images.
 
@@ -105,9 +105,9 @@ python channel_alignment.py \
 
 ##### Example channel_map.csv
 
-fov,timepoint,channel,filepath
-fov01,0,ch1,data/fov01_t000_ch1.tif
-fov01,0,ch2,data/fov01_t000_ch2.tif
+fov,timepoint,channel,filepath \
+fov01,0,ch1,data/fov01_t000_ch1.tif \
+fov01,0,ch2,data/fov01_t000_ch2.tif \
 ...
 
 
@@ -115,15 +115,15 @@ fov01,0,ch2,data/fov01_t000_ch2.tif
 
 Jupyter notebook for interactive use:
 
-registration_notbook.ipynb
+>  registration_notbook.ipynb
 
 
 
 ## 4. Check quality of alignment   
 
 - Visual inspection is essential (use overlays of aligned vs original images).
-- Additionally, SSIM (Structural Similarity Index) or correlation metrics can help evaluate alignment.
-📓 Notebook under development: notebooks/check_alignment_quality.ipynb
+- Additionally, SSIM (Structural Similarity Index) or correlation metrics can help evaluate alignment. \
+📓 Function under development: SSIM.py
 
 ✅ Todo: Add before/after SSIM plots and batch summaries.
 
@@ -140,6 +140,14 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+or 
+
+Create environment: 
+
+```bash
+conda env create -f environment.yml
 ```
 
 
