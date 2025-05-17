@@ -17,7 +17,7 @@ class SplitChannelInputHandler:
         if not os.path.exists(channel_map_file):
             raise FileNotFoundError(f"Cannot find channel_map file: {channel_map_file}")
         
-        self.map_df = pd.read_csv(channel_map_file)
+        self.map_df = pd.read_csv(channel_map_file, dtype={'channel': str})
 
         required_cols = {"fov", "timepoint", "channel", "filepath"}
         if not required_cols.issubset(set(self.map_df.columns)):
