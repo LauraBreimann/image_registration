@@ -11,7 +11,7 @@ Chromatic shifts are corrected using affine transformations, determined from bea
 
 * _**1.	Prepare (bead) images for chromatic shift detection**_
 * _**2.	Determine chromatic shifts**_
-* _**3.	pply chromatic shifts to experimental images**_
+* _**3.	Apply chromatic shifts to experimental images**_
 * _**4.	Check quality of alignment**_
 
 
