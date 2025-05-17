@@ -142,6 +142,14 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+or 
+
+Create environment: 
+
+```bash
+conda env create -f environment.yml
+```
+
 
 ## Authors
 
