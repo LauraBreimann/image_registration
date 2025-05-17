@@ -37,7 +37,7 @@ _TODO: Link to bead slide prep protocol._
 
 ---
   
-## 2. Determine chromatic shiftst 
+## 2. DDetermine chromatic shifts
 
 Use ImageJ/Fiji with the plugin:
 
@@ -60,7 +60,7 @@ Save these matrices into a JSON file (`transformation_dicts.json`):
 }
 ```
 
-## 3. Apply Chromatic Shifts to Images
+## 3. Apply chromatic shifts to experimental images
 
 Use the scripts in this repository to apply the transformations to raw experimental images.
 
