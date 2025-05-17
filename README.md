@@ -37,7 +37,7 @@ _TODO: Link to bead slide prep protocol._
 
 ---
   
-## 2. DDetermine chromatic shifts
+## 2. Determine chromatic shifts
 
 Use ImageJ/Fiji with the plugin:
 
@@ -105,9 +105,9 @@ python channel_alignment.py \
 
 ##### Example channel_map.csv
 
-fov,timepoint,channel,filepath
-fov01,0,ch1,data/fov01_t000_ch1.tif
-fov01,0,ch2,data/fov01_t000_ch2.tif
+fov,timepoint,channel,filepath \
+fov01,0,ch1,data/fov01_t000_ch1.tif \
+fov01,0,ch2,data/fov01_t000_ch2.tif \
 ...
 
 
@@ -115,15 +115,15 @@ fov01,0,ch2,data/fov01_t000_ch2.tif
 
 Jupyter notebook for interactive use:
 
-registration_notbook.ipynb
+>  registration_notbook.ipynb
 
 
 
 ## 4. Check quality of alignment   
 
 - Visual inspection is essential (use overlays of aligned vs original images).
-- Additionally, SSIM (Structural Similarity Index) or correlation metrics can help evaluate alignment.
-📓 Notebook under development: notebooks/check_alignment_quality.ipynb
+- Additionally, SSIM (Structural Similarity Index) or correlation metrics can help evaluate alignment. \
+📓 Function under development: SSIM.py
 
 ✅ Todo: Add before/after SSIM plots and batch summaries.
 
